@@ -44,10 +44,20 @@ const grok = new OpenAI({
 // ---- Google Sheets Setup ----
 // Service Account = a "robot" Google account that doesn't need human login
 // We gave it edit access to our spreadsheet earlier
+// The private key might have literal \n or real newlines depending on how
+// the env var was set — we handle both cases
+let privateKey = process.env.GOOGLE_PRIVATE_KEY || '';
+// If the key is wrapped in quotes (from .env file), remove them
+if (privateKey.startsWith('"') && privateKey.endsWith('"')) {
+  privateKey = privateKey.slice(1, -1);
+}
+// Replace literal \n with real newlines
+privateKey = privateKey.replace(/\\n/g, '\n');
+
 const auth = new google.auth.GoogleAuth({
   credentials: {
     client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')
+    private_key: privateKey
   },
   scopes: ['https://www.googleapis.com/auth/spreadsheets']
 });
@@ -327,11 +337,12 @@ app.get('/setup-webhook', async (req, res) => {
 });
 
 // ---- Start Server ----
-app.listen(PORT, async () => {
+app.listen(PORT, () => {
   console.log(`\nNeuralPath Bot running on port ${PORT}`);
   console.log(`Webhook endpoint: /webhook`);
   console.log(`Setup webhook: /setup-webhook?url=YOUR_URL/webhook`);
   console.log(`Health check: /\n`);
 
-  await setupSheets();
+  // Setup sheets in background — don't crash server if it fails
+  setupSheets().catch(err => console.error('Sheets setup failed:', err.message));
 });
