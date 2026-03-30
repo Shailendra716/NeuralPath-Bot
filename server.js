@@ -10,11 +10,19 @@
 // 6. We log everything to Google Sheets
 // ============================================
 
+// Catch any unhandled errors so we can see what crashed
+process.on('uncaughtException', (err) => {
+  console.error('UNCAUGHT ERROR:', err);
+});
+process.on('unhandledRejection', (err) => {
+  console.error('UNHANDLED PROMISE:', err);
+});
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const TelegramBot = require('node-telegram-bot-api');
-const OpenAI = require('openai');
+const OpenAI = require('openai').default || require('openai');
 const { google } = require('googleapis');
 const productDetails = require('./product-details.json');
 
@@ -337,7 +345,7 @@ app.get('/setup-webhook', async (req, res) => {
 });
 
 // ---- Start Server ----
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`\nNeuralPath Bot running on port ${PORT}`);
   console.log(`Webhook endpoint: /webhook`);
   console.log(`Setup webhook: /setup-webhook?url=YOUR_URL/webhook`);
