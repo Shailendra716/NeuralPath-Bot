@@ -43,13 +43,9 @@ const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {
 
 // ---- Gemini AI Setup ----
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const geminiModel = genAI.getGenerativeModel({
-  model: 'gemini-2.0-flash',
-  generationConfig: {
-    temperature: 0.7,
-    maxOutputTokens: 1000
-  }
-});
+// Note: We create the model without systemInstruction here
+// and set it when starting each chat, after systemPrompt is defined below
+let geminiModel;
 
 // ---- Google Sheets Setup ----
 // Service Account = a "robot" Google account that doesn't need human login
@@ -187,9 +183,23 @@ async function chatWithGemini(userId, userMessage) {
       parts: [{ text: msg.content }]
     }));
 
+    // Create model with system instruction if not yet created
+    if (!geminiModel) {
+      geminiModel = genAI.getGenerativeModel({
+        model: 'gemini-2.0-flash',
+        systemInstruction: {
+          role: 'user',
+          parts: [{ text: systemPrompt }]
+        },
+        generationConfig: {
+          temperature: 0.7,
+          maxOutputTokens: 1000
+        }
+      });
+    }
+
     const chat = geminiModel.startChat({
-      history: geminiHistory,
-      systemInstruction: systemPrompt
+      history: geminiHistory
     });
 
     const result = await chat.sendMessage(userMessage);
