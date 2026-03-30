@@ -1,0 +1,307 @@
+{
+  "company": {
+    "name": "NeuralPath Academy",
+    "tagline": "Master AI. Build the Future.",
+    "website": "https://neuralpath.academy",
+    "email": "hello@neuralpath.academy",
+    "phone": "+91-9876543210",
+    "founded": "2024",
+    "location": "Bangalore, India (100% Online)",
+    "about": "NeuralPath Academy is an online edtech platform that teaches practical AI skills to working professionals and students. Our courses are designed by industry practitioners from Google, Microsoft, and Amazon. We focus on hands-on learning — every course includes real projects, not just theory."
+  },
+
+  "courses": [
+    {
+      "id": "AI-101",
+      "name": "AI Foundations: Zero to Hero",
+      "level": "Beginner",
+      "duration": "6 weeks",
+      "mode": "Live online + Recorded",
+      "price": 4999,
+      "currency": "INR",
+      "discounted_price": 2999,
+      "emi_available": true,
+      "emi_amount": "999/month x 3",
+      "description": "Start your AI journey from scratch. Learn Python, machine learning basics, and build your first AI model. No coding experience needed.",
+      "topics": [
+        "Python programming from scratch",
+        "Data handling with Pandas & NumPy",
+        "Machine Learning fundamentals",
+        "Build 3 real projects",
+        "Introduction to ChatGPT & prompt engineering"
+      ],
+      "projects": [
+        "Spam email classifier",
+        "Movie recommendation system",
+        "AI-powered resume screener"
+      ],
+      "certificate": true,
+      "job_assistance": false,
+      "tutor": {
+        "name": "Priya Sharma",
+        "title": "Senior ML Engineer, ex-Google",
+        "experience": "8 years in AI/ML",
+        "linkedin": "linkedin.com/in/priyasharma-ml"
+      },
+      "next_batch": "2026-04-15",
+      "seats_left": 23,
+      "total_seats": 50,
+      "rating": 4.8,
+      "reviews_count": 342,
+      "students_enrolled": 2800
+    },
+    {
+      "id": "AI-201",
+      "name": "Generative AI & LLM Mastery",
+      "level": "Intermediate",
+      "duration": "8 weeks",
+      "mode": "Live online + Recorded",
+      "price": 7999,
+      "currency": "INR",
+      "discounted_price": 5499,
+      "emi_available": true,
+      "emi_amount": "1833/month x 3",
+      "description": "Master the tech behind ChatGPT, Claude, and Gemini. Learn to build AI apps, fine-tune models, and deploy them. Perfect for developers and tech professionals.",
+      "topics": [
+        "How LLMs work (Transformers, attention)",
+        "Prompt engineering (advanced techniques)",
+        "RAG (Retrieval Augmented Generation)",
+        "Fine-tuning open source models (LoRA, QLoRA)",
+        "Building AI agents with LangChain",
+        "Deploying AI apps to production"
+      ],
+      "projects": [
+        "Custom chatbot for any business",
+        "Document Q&A system using RAG",
+        "Fine-tune your own LLM on Colab",
+        "AI agent that books meetings"
+      ],
+      "certificate": true,
+      "job_assistance": true,
+      "tutor": {
+        "name": "Arjun Mehta",
+        "title": "AI Lead, ex-Microsoft",
+        "experience": "10 years in NLP & AI",
+        "linkedin": "linkedin.com/in/arjunmehta-ai"
+      },
+      "next_batch": "2026-04-10",
+      "seats_left": 15,
+      "total_seats": 40,
+      "rating": 4.9,
+      "reviews_count": 189,
+      "students_enrolled": 1500
+    },
+    {
+      "id": "AI-301",
+      "name": "AI Automation for Business",
+      "level": "Intermediate",
+      "duration": "5 weeks",
+      "mode": "Live online + Recorded",
+      "price": 5999,
+      "currency": "INR",
+      "discounted_price": 3999,
+      "emi_available": true,
+      "emi_amount": "1333/month x 3",
+      "description": "Learn to automate business workflows using AI. Connect tools like Zapier, n8n, ChatGPT API, and build no-code AI solutions. Perfect for business owners and managers.",
+      "topics": [
+        "AI automation fundamentals",
+        "No-code AI tools (Zapier, n8n, Make)",
+        "ChatGPT API for business",
+        "Automating emails, reports, and data entry",
+        "Building AI chatbots without coding",
+        "AI for sales, marketing, and HR"
+      ],
+      "projects": [
+        "Automated lead qualification system",
+        "AI email responder for customer support",
+        "Sales report generator using AI",
+        "WhatsApp/Telegram bot for your business"
+      ],
+      "certificate": true,
+      "job_assistance": false,
+      "tutor": {
+        "name": "Sneha Reddy",
+        "title": "Automation Consultant, ex-Deloitte",
+        "experience": "6 years in business automation",
+        "linkedin": "linkedin.com/in/snehareddy-auto"
+      },
+      "next_batch": "2026-04-20",
+      "seats_left": 30,
+      "total_seats": 60,
+      "rating": 4.7,
+      "reviews_count": 156,
+      "students_enrolled": 1100
+    },
+    {
+      "id": "AI-401",
+      "name": "Computer Vision & Deep Learning",
+      "level": "Advanced",
+      "duration": "10 weeks",
+      "mode": "Live online + Recorded",
+      "price": 12999,
+      "currency": "INR",
+      "discounted_price": 8999,
+      "emi_available": true,
+      "emi_amount": "2999/month x 3",
+      "description": "Build AI that can see. Learn deep learning, CNNs, object detection, and image generation. Industry-ready skills for computer vision roles.",
+      "topics": [
+        "Neural networks & deep learning",
+        "CNNs (Convolutional Neural Networks)",
+        "Object detection (YOLO, Faster R-CNN)",
+        "Image segmentation",
+        "GANs & image generation",
+        "Deploying CV models in production"
+      ],
+      "projects": [
+        "Real-time face detection system",
+        "Product defect detector for manufacturing",
+        "AI-powered medical image analyzer",
+        "Custom image generation model"
+      ],
+      "certificate": true,
+      "job_assistance": true,
+      "tutor": {
+        "name": "Dr. Vikram Patel",
+        "title": "Research Scientist, ex-Amazon",
+        "experience": "12 years in computer vision",
+        "linkedin": "linkedin.com/in/vikrampatel-cv"
+      },
+      "next_batch": "2026-05-01",
+      "seats_left": 18,
+      "total_seats": 30,
+      "rating": 4.9,
+      "reviews_count": 98,
+      "students_enrolled": 650
+    },
+    {
+      "id": "AI-BUNDLE",
+      "name": "Complete AI Pro Bundle",
+      "level": "Beginner to Advanced",
+      "duration": "6 months (all 4 courses)",
+      "mode": "Live online + Recorded",
+      "price": 31996,
+      "currency": "INR",
+      "discounted_price": 14999,
+      "emi_available": true,
+      "emi_amount": "2499/month x 6",
+      "description": "Get all 4 courses at 53% off. Go from complete beginner to AI professional in 6 months. Includes job assistance, 1-on-1 mentorship, and lifetime access.",
+      "topics": ["Everything from all 4 courses"],
+      "projects": ["All 14 projects from all courses"],
+      "certificate": true,
+      "job_assistance": true,
+      "extras": [
+        "1-on-1 mentorship (4 sessions/month)",
+        "Resume building workshop",
+        "Mock interview preparation",
+        "LinkedIn profile optimization",
+        "Lifetime access to all course updates",
+        "Private Slack community access"
+      ],
+      "tutor": {
+        "name": "All 4 tutors",
+        "title": "Industry experts from Google, Microsoft, Amazon, Deloitte"
+      },
+      "next_batch": "2026-04-10",
+      "seats_left": 10,
+      "total_seats": 25,
+      "rating": 4.9,
+      "reviews_count": 67,
+      "students_enrolled": 420
+    }
+  ],
+
+  "testimonials": [
+    {
+      "name": "Rahul K.",
+      "course": "AI Foundations",
+      "role": "Software Developer at Infosys",
+      "text": "I had zero ML knowledge. After 6 weeks, I built a recommendation system for my team. Got promoted within 3 months.",
+      "rating": 5
+    },
+    {
+      "name": "Ananya S.",
+      "course": "Generative AI & LLM Mastery",
+      "role": "Product Manager at a startup",
+      "text": "This course changed my career. I now lead the AI initiative at my company. The RAG project alone was worth the price.",
+      "rating": 5
+    },
+    {
+      "name": "Mohammed F.",
+      "course": "AI Automation for Business",
+      "role": "Business Owner",
+      "text": "I automated 70% of my customer support using what I learned. Saving 4 hours every day. Best investment I made.",
+      "rating": 5
+    },
+    {
+      "name": "Deepika R.",
+      "course": "Complete AI Pro Bundle",
+      "role": "Fresher, now ML Engineer at Flipkart",
+      "text": "Went from BTech graduate with no job to ML Engineer at Flipkart in 6 months. The job assistance program is real — they actually help.",
+      "rating": 5
+    },
+    {
+      "name": "Sanjay M.",
+      "course": "Computer Vision & Deep Learning",
+      "role": "Data Scientist at TCS",
+      "text": "Dr. Vikram is an incredible teacher. The manufacturing defect project is exactly what I use at work now.",
+      "rating": 5
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Do I need coding experience?",
+      "answer": "Not for AI-101 (Foundations) or AI-301 (Automation). For AI-201 (LLM) and AI-401 (Computer Vision), basic Python knowledge is recommended."
+    },
+    {
+      "question": "What if I miss a live class?",
+      "answer": "All live sessions are recorded and available within 2 hours. You get lifetime access to recordings."
+    },
+    {
+      "question": "Is there a refund policy?",
+      "answer": "Yes, 7-day full refund policy. If you are not satisfied within the first week, we refund 100% — no questions asked."
+    },
+    {
+      "question": "Do I get a certificate?",
+      "answer": "Yes, all courses include a verified certificate upon completion. The certificate is shareable on LinkedIn."
+    },
+    {
+      "question": "What is job assistance?",
+      "answer": "Available with AI-201, AI-401, and the Bundle. Includes resume review, mock interviews, job referrals to our 50+ hiring partner companies."
+    },
+    {
+      "question": "Can I pay in EMI?",
+      "answer": "Yes, all courses offer 3-month or 6-month EMI options with zero interest."
+    },
+    {
+      "question": "What language are courses taught in?",
+      "answer": "English with Hindi support. Tutors explain complex concepts in Hindi when needed."
+    },
+    {
+      "question": "How are live classes conducted?",
+      "answer": "Via Zoom. Typically 2-3 sessions per week, 1.5 hours each. Weekday evening (7-8:30 PM IST) or weekend batches available."
+    }
+  ],
+
+  "bot_instructions": {
+    "persona": "You are NeuralPath Academy's friendly AI assistant on Telegram. Your name is Neura.",
+    "tone": "Friendly, helpful, enthusiastic but not pushy. Use simple language. Speak like a helpful senior who genuinely wants to help the person learn AI.",
+    "goals": [
+      "Answer questions about courses, pricing, schedule",
+      "Help people choose the right course for their level",
+      "Collect interested leads (name, email, phone, course interest)",
+      "Share testimonials when someone is unsure",
+      "Handle objections about price, time commitment, difficulty",
+      "Escalate complex queries to human support"
+    ],
+    "do_not": [
+      "Never make up information not in the product details",
+      "Never promise guaranteed jobs or salaries",
+      "Never badmouth competitors",
+      "Never share internal business details",
+      "Never skip collecting lead info if someone shows strong interest"
+    ],
+    "lead_collection_flow": "When someone asks about enrollment or shows buying intent, ask: 1) Their name, 2) Email, 3) Phone number, 4) Which course they are interested in. Then say a counselor will call them within 24 hours.",
+    "escalation_trigger": "If the user asks for a custom corporate training, bulk discount, or has a complaint — tell them a human team member will reach out and collect their contact info."
+  }
+}
